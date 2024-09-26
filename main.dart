@@ -162,11 +162,7 @@ void convert(double value, String from, String to) {
             ),
             SizedBox(height: 20),
               Text(
-              (_numberFrom == null) ? '' : _numberFrom.toString(),
-              style: labelStyle,
-              textAlign: TextAlign.center,
-              ),
-
+                  (_resultMessage == null) ? '' : _resultMessage,style: labelStyle),
               
             SizedBox(height: 40),
 
@@ -181,8 +177,7 @@ void convert(double value, String from, String to) {
                   }
               },
               ),
-              Text(
-                  (_resultMessage == null) ? '' : _resultMessage,style: labelStyle),
+            
           ],
               
         ),
